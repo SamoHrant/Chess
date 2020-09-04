@@ -14,8 +14,28 @@ namespace Chess
     {
         public override void Move()
         {
-            chessDesk[i1, j1] = "";
-            chessDesk[i2, j2] = "wPawn";
+            if (i1 == 6)
+            {
+                if (i2 == i1 - 2)
+                {
+                    chessDesk[i1, j1] = "";
+                    chessDesk[i2, j2] = "wPawn";
+                }
+
+                if (i2 == i1 - 1)
+                {
+                    chessDesk[i1, j1] = "";
+                    chessDesk[i2, j2] = "wPawn";
+                }
+            }
+            else
+            {
+                if(i2 == i1 - 1)
+                {
+                    chessDesk[i1, j1] = "";
+                    chessDesk[i2, j2] = "wPawn";
+                }
+            }
         }
 
         public override bool Attack()

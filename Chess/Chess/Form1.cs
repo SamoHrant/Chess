@@ -256,6 +256,7 @@ namespace Chess
             if (z == 1)
             {
                 Button btn4 = (Button)sender;
+                MessageBox.Show(btn4.Name);
                 ChessFigure.btn1 = (Button)sender;
                 Name = ChessFigure.btn1.Name;
                 ChessFigure.i1 = ChessFigure.btn1.Name[ChessFigure.btn1.Name.Length - 2] - 48;
@@ -276,7 +277,6 @@ namespace Chess
                     }
                 }
 
-                //MessageBox.Show(ChessFigure.btn1.Name);
                 z++;
             }
             else
